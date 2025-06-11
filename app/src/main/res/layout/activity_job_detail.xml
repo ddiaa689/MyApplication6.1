@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#F6F7FB">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivDetailAvatar"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/bg_avatar"
+                android:background="@drawable/bg_search_box"
+                android:layout_marginEnd="18dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDetailJobTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职位名称"
+                    android:textSize="22sp"
+                    android:textColor="#222222"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailSalary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15-22K·14薪"
+                    android:textSize="18sp"
+                    android:textColor="#22C58B"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 公司、城市、经验、学历 -->
+        <TextView
+            android:id="@+id/tvDetailCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公司"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/tvDetailCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市"
+            android:textColor="#888888"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tvDetailExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经验"
+            android:textColor="#888888"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/tvDetailEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学历"
+            android:textColor="#888888"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"/>
+
+        <!-- 福利标签 -->
+        <LinearLayout
+            android:id="@+id/llDetailTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="14dp"/>
+
+        <!-- 招聘者 -->
+        <TextView
+            android:id="@+id/tvDetailRecruiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作内容\n        实时计算平台，以及离线数据分析平台的建设和维护， 支持公司级的大数据服务平台、广告系统、 精准推荐等相关业务\n        任职要求
+熟悉linux开发环境，熟练掌握JAVA语言，熟悉分布式系统开发，熟悉多线程、网络编程；熟悉常用的数据结构与算法。 熟悉SQL/Hadoop/Hive/Spark/Storm等大数据工具 ，具有海量数据处理经验者优先，有过大数据系统架构经验或相关开源社区活跃者优先。 计算机或相关专业本科及以上学历 ，具有一年以上相关工作经验； 具备良好的学习能力和分析解决问题的能力，高度责任心和团队合作精神。"
+            android:textColor="#444444"
+            android:textSize="15sp"
+            android:layout_marginTop="14dp"/>
+
+    </LinearLayout>
+</ScrollView>

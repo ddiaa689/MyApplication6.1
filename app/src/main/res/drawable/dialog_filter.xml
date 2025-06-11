@@ -1,0 +1,37 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="18dp">
+
+        <TextView android:text="工作城市"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+
+        <TextView android:text="学历要求"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spDegree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+
+        <TextView android:text="经验要求"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+
+        <TextView android:text="薪资区间"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+
+        <TextView android:text="公司"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

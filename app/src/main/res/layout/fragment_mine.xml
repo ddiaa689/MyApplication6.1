@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F6F7FB">
+
+        <!-- 个人信息卡片 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="18dp">
+
+            <ImageView
+                android:id="@+id/ivMineAvatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/bg_avatar"
+                android:background="@drawable/bg_search_box"
+                android:layout_marginEnd="18dp"/>
+
+            <TextView
+                android:id="@+id/tvMineName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textColor="#222222"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- 功能区块 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvMineEditResume"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:text="编辑简历"
+                android:textColor="#222222"
+                android:textSize="17sp"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                android:paddingStart="24dp"
+                android:drawablePadding="14dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F2F3F7"/>
+
+            <TextView
+                android:id="@+id/tvMineDeliverHistory"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:text="投递记录"
+                android:textColor="#222222"
+                android:textSize="17sp"
+                android:drawableLeft="@android:drawable/ic_menu_send"
+                android:paddingStart="24dp"
+                android:drawablePadding="14dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F2F3F7"/>
+
+            <TextView
+                android:id="@+id/tvMineSettings"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:text="设置"
+                android:textColor="#222222"
+                android:textSize="17sp"
+                android:drawableLeft="@android:drawable/ic_menu_preferences"
+                android:paddingStart="24dp"
+                android:drawablePadding="14dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F2F3F7"/>
+        </LinearLayout>
+
+        <!-- 退出登录 -->
+        <TextView
+            android:id="@+id/tvMineLogout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="#22C58B"
+            android:textSize="17sp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="28dp"/>
+    </LinearLayout>
+</ScrollView>
